@@ -77,7 +77,7 @@ function App() {
         매수금액 &nbsp;
         <input
           value={askPrice}
-          onChange={(e) => setbidPrice(e.target.value)}
+          onChange={(e) => setaskPrice(e.target.value)}
         />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,7 +85,7 @@ function App() {
         매도금액 &nbsp;
         <input
           value={bidPrice}
-          onChange={(e) => setaskPrice(e.target.value)}
+          onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
       <br />
