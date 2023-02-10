@@ -7,13 +7,13 @@ import html2canvas from "html2canvas";
 
 function App() {
   const [coin, setCoin] = useState("카나리아바이오");
-  const [askPrice, setaskPrice] = useState("174"); 
-  const [bidPrice, setbidPrice] = useState("186");
+  const [askPrice, setaskPrice] = useState("1000"); 
+  const [bidPrice, setbidPrice] = useState("1100");
   const [maxPrice, setmaxPrice] = useState("100000");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [result, setResult] = useState(
-    ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
+    ((bidPrice / askPrice - 1) * 70 * 100).toFixed(2)
   );
   const [tangu, setTangu] = useState(false);
 
@@ -130,7 +130,7 @@ function App() {
 
             }}
           >
-            +{(Number(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005)-maxPrice).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+            +{(Number(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.015)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.015)-maxPrice).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
